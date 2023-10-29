@@ -11,12 +11,17 @@ ping = 0
 lamp = lambda x: x.lower() 
 string = str(list(map(lamp, set)))
 marked = "False"
+check = []
 with open("records.txt", "r+") as F:
     print("Matching Records...")
     for line in F.readlines():
         for char in line:
             if char in set:
-                ping += 1
+                if char in check:
+                    continue
+                else:
+                    check.append(char)
+                    ping += 1
             if ping == boop:
                 marked = "True"
         ping = 0
