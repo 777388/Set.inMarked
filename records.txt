@@ -1,0 +1,12 @@
+['w', 'a', 'r']
+war
+
+['w', 'a', 'r', 'c', 'f', 't']
+warcraft
+
+['r', 'a', 'w']
+raw
+
+['f', 'a', 'r', 't', 'w', ' ', 'c']
+fartwar c
+
