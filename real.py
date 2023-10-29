@@ -18,8 +18,8 @@ with open("records.txt", "r+") as F:
         for char in line:
             if char in set:
                 if char in check:
-                    continue
                     ping += 1
+                    continue
                 else:
                     check.append(char)
                     ping += 1
